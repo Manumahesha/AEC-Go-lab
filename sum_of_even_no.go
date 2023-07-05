@@ -1,24 +1,18 @@
 package main
-
 import "fmt"
 
 func main() {
-	var n int
-	var a [10]int
-	var sum int
-	fmt.Printf("Enter size of array ( 1 - 9) : ")
-	fmt.Scan(&n)
-
-	fmt.Printf("Enter array elements : ")
-	for i := 0; i < n; i++ {
-		fmt.Scan(&a[i])
-	}
-
-	for i := 0; i < n; i++ {
-		if (a[i] % 2) == 0 {
-			sum = sum + a[i]
-		}
-	}
-
-	fmt.Println("Sum of Even array is ", sum)
+         var prev,current,sum int
+         prev=0
+         current=1
+        sum=0
+    for prev+current <40{
+        next:= prev+current
+        if next%2==0 {
+            sum+=next
+        }
+        prev=current
+        current=next
+    }
+     fmt.Println("The sum of the even valued term is",sum)
 }
