@@ -24,3 +24,6 @@ func main() {
 	number := 14
 	fmt.Println("The largest prime factor of", number, "is", largestPrimFactor(number))
 }
+
+//output
+//The largest prime factor of 14 is 7
