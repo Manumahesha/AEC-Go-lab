@@ -33,3 +33,7 @@ func main() {
 	PrintArea(circle)
 	PrintArea(rectangle)
 }
+
+//output
+//Area:78.54
+//Area:24.00
