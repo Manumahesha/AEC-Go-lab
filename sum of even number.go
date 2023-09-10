@@ -16,3 +16,6 @@ func main() {
     }
      fmt.Println("The sum of the even valued term is",sum)
 }
+
+//output
+//The sum of the even valued term is 44
