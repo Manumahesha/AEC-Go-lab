@@ -26,3 +26,14 @@ func main() {
 		fmt.Println("Length of the map:", len(myMap))
 	}
 }
+
+/*output
+Value of apple: 1
+Value of banana: 2
+Updated value of apple: 5
+Updated value of orange: map[apple:5 banana:2]
+Value of banana: 2
+Key: apple value: 5
+Length of the map: 2
+Key: banana value: 2
+Length of the map: 2*/
