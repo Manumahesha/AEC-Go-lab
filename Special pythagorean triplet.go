@@ -1,25 +1,26 @@
 package main
-
 import "fmt"
-
-func findSpecialPythagoreanTriplet(n int) (int, int, int) {
-	for a := 1; a < n/3; a++ {
-		for b := a; b < (n-a)/2; b++ {
-			c := n - a - b
-			if a*a+b*b == c*c {
-				return a, b, c
+func main() {
+	var n int
+	fmt.Println("Enter the sum")
+	fmt.Scanln(&n)
+	var found bool
+	for a := 1; a < n; a++ {
+		for b := a + 1; b < n; b++ {
+			for c := b + 1; c < n; c++ {
+				if a+b+c == n && a*a+b*b == c*c {
+					fmt.Println("The triplet is", a, b, c)
+					found = true
+					break
+				}
 			}
 		}
 	}
-	return -1, -1, -1
-}
-
-func main() {
-	n := 150 //Sum of the triplet
-	a, b, c := findSpecialPythagoreanTriplet(n)
-	if a != -1 && b != -1 && c != -1 {
-		fmt.Printf("The special Pythagorean triplet for sum %d is %d, %d, %d\n", n, a, b, c)
-	} else {
-		fmt.Printf("There is no special Pythagorean triplet for sum %d\n", n)
+	if !found {
 	}
 }
+
+//Output
+//Enter the sum
+//150
+//The triplet is 25 60 65
