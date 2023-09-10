@@ -1,5 +1,3 @@
-// Largest palindrome product
-
 package main
 import "fmt"
 import "strconv"
@@ -39,3 +37,7 @@ func main()  {
 	fmt.Printf("The Largest palindrome product is : %d\n",result)
 	fmt.Printf("The Multiplicands are : %d and %d\n",multiplicand1,multiplicand2)
 }
+
+//output
+//The Largest palindrome product is : 906609
+//The Multiplicands are : 993 and 913
