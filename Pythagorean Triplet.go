@@ -1,4 +1,3 @@
-//Special pythagorean triplet
 package main
 import "fmt"
 func findSpecialPythagoreanTriplet(n int)(int,int,int){
@@ -22,3 +21,6 @@ func main(){
 		fmt.Printf("No Special Pythagorean Triplet found for sum %d\n",n)
 	}
 }
+
+//output
+//The Special Pythagorean Triplet for sum 150 is (25, 60, 65)
